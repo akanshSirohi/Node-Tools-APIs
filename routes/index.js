@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
       text2: "Secondary text to write",
       bgColor: "Background color of image (#ffffff)",
       textColor: "Text color of image (#000000)",
-      example: `${baseurl}/text-ttr?text1=Akansh%20Sirohi&text2=Altered%20Coder`,
+      example: `${baseurl}/text-ttr?text1=Akansh%20Sirohi&text2=Altered%20Coder&bgColor=%23000&textColor=%23f00`,
     },
     ytdl: {
       url: "Youtube video url",
