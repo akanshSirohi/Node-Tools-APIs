@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
   if ("textColor" in req.query) {
     opts["textColor"] = req.query.textColor;
   }
+  console.log(opts);
   let img = textTTR(opts);
   res.json({ result: img });
 });
