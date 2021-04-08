@@ -11,9 +11,9 @@ if (process.env.HEROKU) {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", require("./routes/index"));
-app.use("/text-ttr", require("./routes/text-ttr"));
-app.use("/ytdl", require("./routes/ytdl"));
+app.use("/", require("./tools/index"));
+app.use("/text-ttr", require("./tools/text-ttr"));
+app.use("/ytdl", require("./tools/ytdl"));
 
 app.listen(port, () => {
   console.log(`Server started on url: ${baseurl}`);
